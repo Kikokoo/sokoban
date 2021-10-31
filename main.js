@@ -21,6 +21,7 @@
 		else if(e.keyCode==38)dx= 0, dy=-1;
 		else if(e.keyCode==39)dx=1, dy=0;
 		else if(e.keyCode==40)dx=0, dy=1;
+		else if(e.keyCode==35)dx=0, dy=1;
 		else return;
 		
 		var newPos = level[y+dy][x+dx];
@@ -47,6 +48,7 @@
 				if(level[n][m].className=='b')return;
 		
 		alert('You win!');
+		alert('You cool!');
 	});
 	
 })()
